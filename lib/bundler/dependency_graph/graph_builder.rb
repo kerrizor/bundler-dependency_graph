@@ -12,16 +12,17 @@ module Bundler
         #   are handled by Thor, but we're not entirely sure how the
         #   Bundler::Plugin::API passes them (or doesn't) to plugins
 
-        args[:file]         = "gem_graph"
-        args[:format]       = "png"
-        args[:requirements] = false
-        args[:version]      = false
-        args[:without]      = []
+        options = {}
+        options[:file]         = "gem_graph"
+        options[:format]       = "png"
+        options[:requirements] = false
+        options[:version]      = false
+        options[:without]      = []
 
-        args[:without] = args[:without].join(":").tr(" ", ":").split(":")
-        output_file = File.expand_path(args[:file])
+        options[:without] = options[:without].join(":").tr(" ", ":").split(":")
+        output_file = File.expand_path(options[:file])
 
-        graph = Graph.new(Bundler.load, output_file, args[:version], args[:requirements], args[:format], args[:without])
+        graph = Graph.new(Bundler.load, output_file, options[:version], options[:requirements], options[:format], options[:without])
         graph.viz
       rescue LoadError => e
         Bundler.ui.error e.inspect
