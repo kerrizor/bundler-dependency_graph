@@ -1,28 +1,15 @@
 # Bundler::DependencyGraph
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bundler/dependency_graph`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A bundler plugin that generates a visual representation of your gem dependencies.
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'bundler-dependency_graph'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install bundler-dependency_graph
+  $ bundle plugin install bundler-dependency_graph --git "https://github.com/kerrizor/bundler-dependency_graph"
 
 ## Usage
 
-TODO: Write usage instructions here
+  $ bundle graph
 
 ## Development
 
@@ -38,4 +25,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
