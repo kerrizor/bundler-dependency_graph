@@ -6,7 +6,7 @@ module Bundler
       Bundler::Plugin::API.command "graph", self
 
       def exec(command, args)
-        puts "Hi Kerri & Whitney!"
+        puts "Currently unimplented; use `bundle viz` to generate your graphs for now."
       end
     end
   end
