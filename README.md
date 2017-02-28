@@ -4,8 +4,7 @@ A bundler plugin that generates a visual representation of your gem dependencies
 
 ## Installation
 
-
-  $ bundle plugin install bundler-dependency_graph --git "https://github.com/kerrizor/bundler-dependency_graph"
+  $ bundle plugin install bundler-dependency_graph
 
 ## Usage
 
