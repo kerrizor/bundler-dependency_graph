@@ -4,7 +4,7 @@ module Bundler
       Bundler::Plugin::API.command "graph", self
 
       def exec(command, args)
-        puts "Currently unimplented; use `bundle viz` to generate your graphs for now."
+        puts "Currently unimplemented; use `bundle viz` to generate your graphs for now."
 
         require "graphviz"
 
